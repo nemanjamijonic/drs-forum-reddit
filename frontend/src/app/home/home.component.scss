@@ -1,0 +1,109 @@
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.buttonADD {
+    padding: 10px 20px;
+    background-color: #C3073F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.buttonADD:hover {
+    background-color: #4E4E45;
+}
+
+.sortTable,
+.searchTable {
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+.th-post-table {
+    color: #C3073F;
+    padding: 5px;
+}
+
+.input1,
+.input2 {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    border: 1px solid #C3073F;
+    cursor: pointer;
+}
+
+.input2 {
+    background-color: #454550;
+    /* Tamnija pozadina za aktivirani filter */
+    color: white;
+}
+
+.inputSearch {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #C3073F;
+    width: 100%;
+}
+
+.searchButton {
+    width: 32px;
+    height: 32px;
+    border: none;
+    cursor: pointer;
+}
+
+.posts {
+    list-style-type: none;
+    padding: 0;
+    width: 35%;
+}
+
+.list {
+    margin-bottom: 20px;
+}
+
+.post_table {
+    background-color: #5C5C60;
+    color: #E0E0E0;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.author {
+    color: #C3073F;
+    font-weight: bold;
+}
+
+.desc {
+    margin: 10px 0;
+    word-wrap: break-word;
+}
+
+.spacing_1 {
+    height: 10px;
+}
+
+.butImg {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.butImg.liked,
+.butImg.disliked {
+    filter: brightness(0.7);
+    cursor: default;
+}
+
+/* Dodatni stilovi ako su potrebni */

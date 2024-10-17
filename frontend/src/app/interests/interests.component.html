@@ -1,0 +1,36 @@
+
+<div class="center-content">
+  <ul class="posts">
+      <li class="list" *ngFor="let post of posts">
+        <table class="post_table">
+          <tr><td colspan="3" class="author">@{{post.user}}</td></tr>
+          <tr><th colspan="3">{{post.title}}</th></tr>
+          <tr><td class="spacing_1"></td></tr>
+          <tr><td  colspan="3"><p class="desc">{{post.description}}</p></td></tr>
+          <tr>
+            <td class="author">
+              <div class="interaction-container">
+                <input *ngIf="!post.liked" class="butImg" type="image" src="../../assets/likebutton.png"
+                  (click)="likePost(post.id);">
+                <input *ngIf="post.liked" class="butImg liked" type="image" src="../../assets/likebutton.png" disabled>
+                <span class="interaction-count">{{post.likes}}</span>
+              </div>
+            </td>
+            <td class="author">
+              <div class="interaction-container">
+                <input *ngIf="!post.disliked" class="butImg" type="image" src="../../assets/dislikebutton.png"
+                  (click)="dislikePost(post.id);">
+                <input *ngIf="post.disliked" class="butImg disliked" type="image" src="../../assets/dislikebutton.png" disabled>
+                <span class="interaction-count">{{post.dislikes}}</span>
+              </div>
+            </td>
+
+            <td class="author" style="width: 20px;"><input class="butImg" type="image"  src="../../assets/comment.png" (click)="ShowAddComment(post.id)" ></td>
+
+            <td  class="author"><input *ngIf="!post.notified" class="butNotify" type="image" src="../../assets/zvonce.png" (click)="notifyPost(post.id);"><input style="border-style:solid; border-color:#C3073F; border-radius:1px;" *ngIf="post.notified" class="butImg" type="image" src="../../assets/zvonce.png" (click)="notifyPost(post.id);"></td><td class="author" > </td>
+          </tr>
+        </table>
+        <app-comment [post]="post" [user]="msg" *ngIf="post.showComment"></app-comment>
+      </li>
+  </ul>
+</div>

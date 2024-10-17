@@ -1,0 +1,54 @@
+<div class="div1">
+
+    <h1 class="h21">Register</h1>
+    <div class="line1"></div>
+
+    <form [formGroup]="form" (ngSubmit)="sendRegisterData()">
+        <div class="form-group">
+            <label class="h31">First Name:</label>
+            <input required class="input1" type="text" formControlName="firstName">
+        </div>
+
+        <div class="form-group">
+            <label class="h31">Last Name:</label>
+            <input required class="input1" type="text" formControlName="lastName">
+        </div>
+
+        <div class="form-group">
+            <label class="h31">Username:</label>
+            <input required class="input1" type="text" formControlName="username">
+        </div>
+
+        <div class="form-group">
+            <label class="h31">Password:</label>
+            <input required class="input1" type="password" formControlName="password">
+        </div>
+
+        <div class="form-group">
+            <label class="h31">Address:</label>
+            <input required class="input1" type="text" formControlName="address">
+        </div>
+
+        <div class="form-group">
+            <label class="h31">Country:</label>
+            <input required class="input1" type="text" formControlName="country">
+        </div>
+
+        <div class="form-group">
+            <label class="h31">Email:</label>
+            <input required class="input1" type="email" formControlName="email">
+        </div>
+
+        <div class="form-group">
+            <label class="h31">Phone Number:</label>
+            <input required class="input1" type="text" formControlName="phoneNumber">
+        </div>
+
+        <div class="button-container">
+            <button type="submit" class="button1 button1-pom">Submit</button>
+            <button type="reset" class="button1 button1-pom2">Clear</button>
+        </div>
+    </form>
+
+    <div class="line2"></div>
+</div>

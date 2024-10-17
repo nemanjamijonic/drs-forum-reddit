@@ -1,0 +1,81 @@
+.div1 {
+    margin: 50px auto;
+    width: 600px;
+    max-width: 80%;
+    background-color: #454550;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.div1:hover {
+    transform: scale(1.05);
+}
+
+.h21 {
+    text-align: center;
+    color: #C3073F;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.line1,
+.line2 {
+    width: 100%;
+    height: 2px;
+    background-color: #C3073F;
+    margin: 10px 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    /* Dodajte razmak između form-group divova */
+}
+
+.form-group label {
+    display: block;
+    color: #C3073F;
+    margin-bottom: 5px;
+}
+
+.input1 {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #C3073F;
+    border-radius: 5px;
+    color: #333;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input1:focus {
+    border-color: #C3073F;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.button1,
+.button1-pom2 {
+    width: 200px;
+    margin: 0 5px;
+    /* Dodajte malo prostora između dugmića */
+    padding: 12px 30px;
+    /* Prilagodite padding za veće dugmiće */
+    background-color: #C3073F;
+    border: 1px solid #C3073F;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button1:hover,
+.button1-pom2:hover {
+    background-color: #4E4E50;
+}
